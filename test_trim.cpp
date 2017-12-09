@@ -16,6 +16,7 @@
 #include "trim.h"
 #include "test_trim.h"
 
+
 /******************************************************************************
  * empty_substring: tests that trimming an empty string yields an empty
  * string.
@@ -51,7 +52,7 @@ TEST(total_string)
  ******************************************************************************/
 TEST(leading_blanks)
 {
-	char str[STRLEN] = "    PRPR is fun";
+	char str[STRLEN] = "   PRPR is fun";
 	char trimmed[STRLEN] = "no content";
 
 	trim(str, trimmed);
